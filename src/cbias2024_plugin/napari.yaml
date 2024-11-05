@@ -1,23 +1,10 @@
 name: cbias2024-plugin
-display_name: CBIAS2024
+display_name: CBIAS2024 Demo Plugin
 # use 'hidden' to remove plugin from napari hub search results
-visibility: public
+visibility: hidden
 # see https://napari.org/stable/plugins/manifest.html for valid categories
-categories: ["Annotation", "Segmentation", "Acquisition"]
 contributions:
   commands:
-    - id: cbias2024-plugin.get_reader
-      python_name: cbias2024_plugin._reader:napari_get_reader
-      title: Open data with CBIAS2024
-    - id: cbias2024-plugin.write_multiple
-      python_name: cbias2024_plugin._writer:write_multiple
-      title: Save multi-layer data with CBIAS2024
-    - id: cbias2024-plugin.write_single_image
-      python_name: cbias2024_plugin._writer:write_single_image
-      title: Save image data with CBIAS2024
-    - id: cbias2024-plugin.make_sample_data
-      python_name: cbias2024_plugin._sample_data:make_sample_data
-      title: Load sample data from CBIAS2024
     - id: cbias2024-plugin.make_container_widget
       python_name: cbias2024_plugin:ImageThreshold
       title: Make threshold Container widget
@@ -30,21 +17,6 @@ contributions:
     - id: cbias2024-plugin.make_qwidget
       python_name: cbias2024_plugin:ExampleQWidget
       title: Make example QWidget
-  readers:
-    - command: cbias2024-plugin.get_reader
-      accepts_directories: false
-      filename_patterns: ['*.npy']
-  writers:
-    - command: cbias2024-plugin.write_multiple
-      layer_types: ['image*','labels*']
-      filename_extensions: []
-    - command: cbias2024-plugin.write_single_image
-      layer_types: ['image']
-      filename_extensions: ['.npy']
-  sample_data:
-    - command: cbias2024-plugin.make_sample_data
-      display_name: CBIAS2024
-      key: unique_id.1
   widgets:
     - command: cbias2024-plugin.make_container_widget
       display_name: Container Threshold
