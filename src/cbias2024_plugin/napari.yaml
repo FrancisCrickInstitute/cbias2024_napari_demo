@@ -6,24 +6,24 @@ visibility: hidden
 contributions:
   commands:
     - id: cbias2024-plugin.make_container_widget
-      python_name: cbias2024_plugin:ImageThreshold
+      python_name: cbias2024_plugin:ExampleContainer
       title: Make threshold Container widget
-    - id: cbias2024-plugin.make_magic_widget
-      python_name: cbias2024_plugin:threshold_magic_widget
+    - id: cbias2024-plugin.make_factory
+      python_name: cbias2024_plugin:example_factory
       title: Make threshold magic widget
     - id: cbias2024-plugin.make_function_widget
-      python_name: cbias2024_plugin:threshold_autogenerate_widget
+      python_name: cbias2024_plugin:example_function
       title: Make threshold function widget
     - id: cbias2024-plugin.make_qwidget
       python_name: cbias2024_plugin:ExampleQWidget
       title: Make example QWidget
   widgets:
     - command: cbias2024-plugin.make_container_widget
-      display_name: Container Threshold
-    - command: cbias2024-plugin.make_magic_widget
-      display_name: Magic Threshold
+      display_name: Example Magic Container
+    - command: cbias2024-plugin.make_factory
+      display_name: Example Magic Factory
     - command: cbias2024-plugin.make_function_widget
       autogenerate: true
-      display_name: Autogenerate Threshold
+      display_name: Example Autogenerate Magic Function
     - command: cbias2024-plugin.make_qwidget
       display_name: Example QWidget
