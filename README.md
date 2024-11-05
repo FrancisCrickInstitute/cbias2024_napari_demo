@@ -23,11 +23,7 @@ https://napari.org/stable/plugins/index.html
 
 ## Installation
 
-You can install `cbias2024-plugin` via [pip]:
-
-    pip install cbias2024-plugin
-
-
+After cloning this repo, you can install `cbias2024-plugin` via [pip] using `pip install .` or `pip install -e .` if you want to edit and play around with this.
 
 
 ## Contributing
