@@ -1,12 +1,5 @@
 # cbias2024-plugin
 
-[![License MIT](https://img.shields.io/pypi/l/cbias2024-plugin.svg?color=green)](https://github.com/sea-shunned/cbias2024-plugin/raw/main/LICENSE)
-[![PyPI](https://img.shields.io/pypi/v/cbias2024-plugin.svg?color=green)](https://pypi.org/project/cbias2024-plugin)
-[![Python Version](https://img.shields.io/pypi/pyversions/cbias2024-plugin.svg?color=green)](https://python.org)
-[![tests](https://github.com/sea-shunned/cbias2024-plugin/workflows/tests/badge.svg)](https://github.com/sea-shunned/cbias2024-plugin/actions)
-[![codecov](https://codecov.io/gh/sea-shunned/cbias2024-plugin/branch/main/graph/badge.svg)](https://codecov.io/gh/sea-shunned/cbias2024-plugin)
-[![napari hub](https://img.shields.io/endpoint?url=https://api.napari-hub.org/shields/cbias2024-plugin)](https://napari-hub.org/plugins/cbias2024-plugin)
-
 Demo plugin for CBIAS 2024
 
 ----------------------------------
@@ -25,11 +18,9 @@ https://napari.org/stable/plugins/index.html
 
 After cloning this repo, you can install `cbias2024-plugin` via [pip] using `pip install .` or `pip install -e .` if you want to edit and play around with this.
 
-
 ## Contributing
 
-Contributions are very welcome. Tests can be run with [tox], please ensure
-the coverage at least stays the same before you submit a pull request.
+Contributing to such a silly repo is not worth it, but up to you.
 
 ## License
 
