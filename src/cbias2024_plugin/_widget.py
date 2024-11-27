@@ -36,7 +36,7 @@ def button_click_callback():
 # to indicate it should be wrapped as a magicgui to autogenerate
 # a widget.
 def example_function():
-    # There's probably a better way to do this, but I don't use magicgui for reasons like this
+    # There's a better way to do this, but I don't use magicgui for reasons like this
     example_function._call_button.text = "Click me"
     button_click_callback()
     return
@@ -61,7 +61,6 @@ class ExampleContainer(Container):
 
 class ExampleQWidget(QWidget):
     # your QWidget.__init__ can optionally request the napari viewer instance
-    # use a type annotation of 'napari.viewer.Viewer' for any parameter
     def __init__(self, viewer: "napari.viewer.Viewer"):
         super().__init__()
         self.viewer = viewer
@@ -71,6 +70,3 @@ class ExampleQWidget(QWidget):
 
         self.setLayout(QVBoxLayout())
         self.layout().addWidget(self.btn)
-
-    def _on_click(self):
-        print("napari has", len(self.viewer.layers), "layers")
